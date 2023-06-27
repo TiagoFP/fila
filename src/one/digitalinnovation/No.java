@@ -1,23 +1,23 @@
 package one.digitalinnovation;
 
-public class No {
+public class No <T>{
 	
-	private Object object; //esse object é o conteudo do nó. é a parte útil
-	private No refNo;
+	private T object; //esse object é o conteudo do nó. é a parte útil
+	private No<T> refNo;
 
 	public No() {
 		}
 
-		public No(Object object) {
+		public No(T object) {
 			this.refNo = null;
 			this.object = object;
 		}
 
-		public Object getObject() {
+		public T getObject() {
 			return object;
 		}
 
-		public void setObject(Object object) {
+		public void setObject(T object) {
 			this.object = object;
 		}
 
